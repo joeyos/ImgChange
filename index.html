@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>jQuery可自动播放焦点图 - 站长素材</title>
+<link href="css/datouwang.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/koala.min.1.5.js"></script>
+</head>
+<body>
+<!-- 代码 开始 -->
+<div id="fsD1" class="focus" style="margin-left:400px">  
+    <div id="D1pic1" class="fPic">  
+        <div class="fcon" style="display: none;">
+            <a target="_blank" href="https://zhangquan1995.github.io">
+				<img src='http://i2.bvimg.com/639183/7f812ee2128b55bb.png'>
+			</a>
+            <span class="shadow"><a target="_blank" href="https://zhangquan1995.github.io">Computer Safe</a></span>
+        </div>
+        
+        <div class="fcon" style="display: none;">
+            <a target="_blank" href="https://zhangquan1995.github.io">
+				<img src='http://i1.bvimg.com/639183/fd53a509bd9648d6.jpg'>
+			</a>
+            <span class="shadow"><a target="_blank" href="https://zhangquan1995.github.io">Stars are fashionable</a></span>
+        </div>
+        
+        <div class="fcon" style="display: none;">
+            <a target="_blank" href="https://zhangquan1995.github.io">
+				<img src='http://i1.bvimg.com/639183/be3007922812c85e.jpg'>
+			</a>
+            <span class="shadow"><a target="_blank" href="https://zhangquan1995.github.io">He is famous</a></span>
+        </div>
+        
+        <div class="fcon" style="display: none;">
+            <a target="_blank" href="https://zhangquan1995.github.io">
+				<img src='http://i1.bvimg.com/639183/db01dcada61e0702.jpg'>
+			</a>
+            <span class="shadow"><a target="_blank" href="https://zhangquan1995.github.io">Intelligent</a></span>
+        </div>    
+    </div>
+    <div class="fbg">  
+    <div class="D1fBt" id="D1fBt">  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a>  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a>  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>3</i></a>  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a>  
+    </div>  
+    </div>  
+    <span class="prev"></span>   
+    <span class="next"></span>    
+</div>
+<script type="text/javascript">
+	Qfast.add('widgets', { path: "js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+	Qfast(false, 'widgets', function () {
+		K.tabs({
+			id: 'fsD1',   //焦点图包裹id  
+			conId: "D1pic1",  //** 大图域包裹id  
+			tabId:"D1fBt",  
+			tabTn:"a",
+			conCn: '.fcon', //** 大图域配置class       
+			auto: 1,   //自动播放 1或0
+			effect: 'fade',   //效果配置
+			eType: 'click', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+			bns: ['.prev', '.next'],//** 前后按钮配置class                          
+			interval: 2000  //** 停顿时间  
+		}) 
+	})  
+</script>
+<!-- 代码 结束 -->
+
+</body>
+</html>
