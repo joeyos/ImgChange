@@ -1,2 +1,3 @@
 # ImgChange
-图片轮播
+
+Rotation of pictures
